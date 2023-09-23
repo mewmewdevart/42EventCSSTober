@@ -3,13 +3,12 @@
 </h1>
 
 <p align="center">
-  <a href="#">See the result here</a>
-</p>
-
-<p align="center">
 	<b><i>A CSS illustration for each day in October, because creating only web pages is insufficient.</i></b><br>
 </p>
 
+<p align="center">
+  <a href="#">See the result here</a>
+</p>
 
 <p align="center">
 	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/mewmewdevart/42EventCSSTober?color=6272a4" />

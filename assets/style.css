@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(./resetCss.css);
+
+:root {
+    --colorBlack:#272829;
+    --colorWhite: #fafafa;
+    --colorGray: #edf1f3;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--colorBlack);
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    color: var(--colorWhite);
+}
+
+p {
+    color: var(--colorWhite);
+}
+
+.socials img {
+    width: 30px;
+    margin-top: 10px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.socials img:hover {
+    filter: invert(80%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: var(--colorGray);
+    padding: 20px;
+    height: 250px;
+    text-align: center;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.icon-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+    width: 95%;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}

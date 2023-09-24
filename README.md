@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="#">See the result here</a>
+  <a href="https://mewmewdevart.github.io/42EventCSSTober/" target="_blank" >See the result here</a>
 </p>
 
 <p align="center">

@@ -1,72 +1,328 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url(./resetCss.css);
 
+/* Color: https://lospec.com/palette-list/mulfok32 */
 :root {
-    --colorBlack:#272829;
-    --colorWhite: #fafafa;
-    --colorGray: #edf1f3;
+    --colorGreen1: #5ba675;
+    --colorGreen2: #6bc96c;
+    --colorGreen3: #abdd64;
+    --colorYellow1: #fcef8d;
+    --colorOrange1: #ffb879;
+    --colorRed1: #ea6262;
+    --colorRed2: #cc425e;
+    --colorRed3: #a32858;
+    --colorPurple1: #751756;
+    --colorPurple2: #390947;
+    --colorPurple3: #611851;
+    --colorPurple4: #873555;
+    --colorPurple5: #a6555f;
+    --colorPink1: #c97373;
+    --colorPink2: #f2ae99;
+    --colorPink3: #ffc3f2;
+    --colorPink4: #ee8fcb;
+    --colorPink5: #d46eb3;
+    --colorPink6: #873e84;
+    --colorBlack1: #1f102a;
+    --colorPurple6: #4a3052;
+    --colorPurple7: #7b5480;
+    --colorPurple8: #a6859f;
+    --colorGray1: #d9bdc8;
+    --colorWhite: #ffffff;
+    --colorBlue1: #aee2ff;
+    --colorBlue2: #8db7ff;
+    --colorBlue3: #6d80fa;
+    --colorBlue4: #8465ec;
+    --colorBlue5: #834dc4;
+    --colorBlue6: #7d2da0;
+    --colorBlue7: #4e187c;
 }
 
+
 body {
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 header {
-    background-color: var(--colorBlack);
-    padding: 10px;
-    text-align: center;
+	background-color: var(--colorBlack1);
+	padding: 10px;
+	text-align: center;
 }
 
 h1 {
-    font-weight: bold;
-    color: var(--colorWhite);
+	font-weight: bold;
+	color: var(--colorWhite);
 }
 
 p {
-    color: var(--colorWhite);
+	margin-top: 5px;
+	color: var(--colorWhite);
 }
 
 .socials img {
-    width: 30px;
-    margin-top: 10px;
-    filter: invert(100%);
-    cursor: pointer;
+	width: 30px;
+	margin-top: 10px;
+	filter: invert(100%);
+	cursor: pointer;
 }
 
 .socials img:hover {
-    filter: invert(80%);
+	filter: invert(80%);
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 20px;
-    padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	gap: 20px;
+	padding: 20px;
+	z-index: 0;
 }
 
 .grid-item {
-    background-color: var(--colorGray);
-    padding: 20px;
-    height: 250px;
-    text-align: center;
-    border: 1px solid #ddd;
-    position: relative;
+	background-color: var(--colorWhite);
+	padding: 20px;
+	height: 250px;
+	text-align: center;
+	border: 1px solid var(--colorGray1);
+	position: relative;
+	z-index: 0;
 }
 
 .icon-badge {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--colorBlack);
-    color: var(--colorWhite);
-    width: 95%;
-    padding: 5px 10px;
-    font-weight: bold;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--colorBlack1);
+	color: var(--colorWhite);
+	width: 95%;
+	padding: 5px 10px;
+	font-weight: bold;
 }
 
 @media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
+	.grid-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+
+.emoji-frankenstein {
+	background-color: var(--colorGreen1);
+	width: 98.4px;
+	height: 98.4px;
+	border-radius: 4px 4px 40px 40px; 
+}
+
+.emoji-frankenstein:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorGreen2);
+	width: 98.4px;
+	height: 98.4px;
+	border-radius: 4px 4px 40px 40px;
+	margin-left: -35.2px;
+}
+
+.head-frankenstein {
+	position: absolute;
+	background-color: var(--colorBlack1);
+	width: 98.4px;
+	height: 25.6px; 
+	border-radius: 4px 4px 0px 0px;
+	margin-top: -16px;
+	z-index: 3;
+}
+
+.head-frankenstein:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorPurple6);
+	width: 98.4px;
+	height: 25.6px;
+	border-radius: 0px 4px 0px 0px;
+	margin-left: -35.2px;
+}
+
+.eyes-frankenstein {
+	position: absolute;
+	background-color: var(--colorWhite);
+	width: 12px;
+	height: 12px;
+	border-radius: 48px;
+	border: 4px solid var(--colorPurple6);
+	z-index: 3;
+	margin-top: 60px;
+	margin-left: 24px;
+}
+
+.eyes-frankenstein:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorWhite);
+	width: 12px;
+	height: 12px;
+	border-radius: 48px;
+	border: 4px solid var(--colorPurple6);
+	z-index: 3;
+	margin-top: -4px;
+	margin-left: 36px;
+}
+
+.mouth-frankenstein {
+	position: absolute;
+	background-color: var(--colorPurple6);
+	width: 34.4px;
+	height: 8px;
+	border-radius: 48px;
+	z-index: 3;
+	margin-top: 88px;
+	margin-left: 41.6px;
+}
+
+.spike-frankenstein {
+	background-color: var(--colorPurple8);
+	position: absolute;
+	width: 120px;
+	height: 8px;
+	z-index: -1;
+	margin-left: -4px;
+	margin-top: 80px;
+}
+
+.spike-frankenstein:after {
+	content: "";
+	background-color: var(--colorGray1);
+	position: absolute;
+	width: 16px;
+	height: 8px;
+	z-index: -1;
+	margin-left: -68px;
+	transform: rotate(90deg);
+}
+
+.spike-frankenstein:before {
+	content: "";
+	background-color: var(--colorGray1);
+	position: absolute;
+	width: 16px;
+	height: 8px;
+	z-index: -1;
+	margin-left: 52px;
+	transform: rotate(90deg);
+}
+
+.detail-frankenstein {
+	position: absolute;
+	background-color: var(--colorGreen2);
+	width: 12px;
+	height: 12px;
+	border-radius: 48px;
+	z-index: 5;
+	margin-left: 20px;
+	margin-top: 4px;
+	box-shadow: 
+	24px 0px 0px 0px var(--colorGreen2),
+	48px 0px 0px 0px var(--colorGreen2),
+	72px 0px 0px 0px var(--colorGreen2);
+}
+
+.scar-frankenstein {
+	position: absolute;
+	background-color: var(--colorPurple6);
+	width: 56px;
+	height: 4px;
+	z-index: 10;
+	margin-top: 24px;
+	margin-left: 56px;
+	border-radius: 20px;
+}
+
+.scar-frankenstein:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorPurple6);
+	width: 4px;
+	height: 12px;
+	z-index: 10;
+	margin-top: -4px;
+	margin-left: -20px;
+	border-radius: 20px;
+	box-shadow: 
+	16px 0px 0px 0px var(--colorPurple6),
+	32px 0px 0px 0px var(--colorPurple6);
+}
+
+.emoji-hand {
+	background-color: var(--colorGreen1);
+	width: 55.2px; 
+	height: 55.2px;
+	border-radius: 44.16px;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+.emoji-hand:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorGreen1);
+	width: 16px; 
+	height: 40px;
+	margin-left: -24px;
+	margin-top: -12px;
+	border-radius: 16px;
+	transform: rotate(-35deg); 
+}
+
+.emoji-hand:before {
+	content: "";
+	position: absolute;
+	background-color: var(--colorGreen1);
+	width: 16px; 
+	height: 64px; 
+	margin-left: 15.2px; 
+	margin-top: 1px; 
+	border-radius: 16px; 
+	transform: rotate(55deg); 
+}
+
+.finger {
+	background-color: var(--colorGreen2);
+	position: absolute;
+	width: 16px; 
+	height: 32px;
+	border-radius: 16px;
+	z-index: 5;
+	margin-left: 16px;
+	margin-top: -9.6px;
+	transform: rotate(45deg);
+}
+
+.finger:after {
+	content: "";
+	background-color: var(--colorGreen2);
+	position: absolute;
+	width: 16px;
+	height: 32px;
+	border-radius: 16px;
+	z-index: 5;
+	margin-left: 4.8px;
+	margin-top: -8px;
+}
+
+.finger:before {
+	content: "";
+	background-color: var(--colorGreen2);
+	position: absolute;
+	width: 16px;
+	height: 30px;
+	border-radius: 16px;
+	z-index: 5;
+	margin-left: 20px;
+	margin-top: -6.3px;
 }

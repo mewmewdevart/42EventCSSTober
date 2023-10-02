@@ -111,6 +111,11 @@ p {
 	margin-top: 10%;
 }
 
+.github-corner {
+    color: var(--colorBlack1);
+    fill: var(--colorBlue3);
+}
+
 /* =================== 01: FRANKENSTEIN ================= */
 .emoji-frankenstein {
 	background-color: var(--colorGreen1);

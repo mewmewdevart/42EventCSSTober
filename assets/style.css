@@ -821,3 +821,148 @@ p {
 	margin-left: -5px;
 	z-index: 16;
 }
+
+/* =================== 04 : RAINBOW ================= */
+.rainbow-block {
+	margin-top: 60px;
+	animation: rainbow-rotate 5s linear infinite;
+}
+
+.rainbow-wind {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: -50px;
+	margin-top: -50px;
+}
+
+.rainbow-wind:nth-child(1) .rainbow-triangle {
+	position: absolute;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 50px solid var(--colorOrange1);
+	rotate: 90deg;
+	margin-top: -25px;
+	margin-left: -25px;
+	z-index: 2;
+}
+
+.rainbow-wind:nth-child(1) {
+	background-color: var(--colorYellow1);
+}
+
+.rainbow-wind:nth-child(2) {
+	background-color: var(--colorBlue4);
+	margin-left: 0px;
+}
+
+.rainbow-wind:nth-child(2) .rainbow-triangle {
+	position: absolute;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 50px solid var(--colorBlue5);
+	rotate: 180deg;
+	margin-top: 0px;
+	margin-left: 0px;
+	z-index: 2;
+}
+
+.rainbow-wind:nth-child(3) {
+	background-color: var(--colorGreen2);
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+.rainbow-wind:nth-child(3) .rainbow-triangle {
+	position: absolute;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 50px solid var(--colorGreen1);
+	rotate: -90deg;
+	margin-top: 25px;
+	margin-left: -25px;
+	z-index: 2;
+}
+
+.rainbow-wind:nth-child(4) {
+	background-color: var(--colorPink4);
+	margin-left: -50px;
+	margin-top: 0px;
+}
+
+.rainbow-wind:nth-child(4) .rainbow-triangle {
+	position: absolute;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid var(--colorRed2);
+	rotate: -180deg;
+	margin-top: 0px;
+	margin-left: -50px;
+	z-index: 2;
+}
+
+.rainbow-line {
+	background-color: var(--colorPurple5);
+	width: 15px;
+	height: 125px;
+	border-radius: none;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.rainbow-details:nth-child(1) {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: var(--colorYellow1);
+	margin-left: -220px;
+	margin-top: -40px;
+	rotate: 40deg;
+	z-index: 10;
+	animation: rainbow-blink 2s linear infinite;
+}
+
+.rainbow-details:nth-child(2) {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: var(--colorYellow1);
+	margin-left: 250px;
+	rotate: 40deg;
+	z-index: 10;
+	animation: rainbow-blink 4s linear infinite;
+}
+
+.rainbow-details:nth-child(3) {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: var(--colorYellow1);
+	margin-left: 100px;
+	margin-top: 125px;
+	rotate: 40deg;
+	z-index: 10;
+	animation: rainbow-blink 2s linear infinite;
+}
+
+@keyframes rainbow-blink {
+	0% {
+	  opacity: 1;
+	}
+	50% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+
+@keyframes rainbow-rotate {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+  

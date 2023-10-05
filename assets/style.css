@@ -966,3 +966,143 @@ p {
 	}
   }
   
+
+/* =================== 05 : POISONOUS ================= */
+.poison-ball {
+	background-color: var(--colorBlack1);;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	box-shadow: inset 0px -7px 0px var(--colorBlue7);
+	border: 2px solid var(--colorBlack1);
+}
+
+.poison-eye-left {
+	background-color: var(--colorWhite);
+	position: absolute;
+	width: 60px;
+	height: 37px;
+	border-radius: 0px 0px 50px 50px;
+	border: 2px solid var(--colorBlack1);
+	margin-left: -80px;
+	margin-top: 25px;
+	transform: rotate(20deg);
+}
+
+.poison-eye-left:after {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 15px;
+	background-color: var(--colorBlack1);
+	border-radius: 50px;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.poison-eye-right {
+	background-color: var(--colorWhite);
+	position: absolute;
+	width: 60px;
+	height: 37px;
+	border-radius: 0px 0px 50px 50px;
+	border: 2px solid var(--colorBlack1);
+	margin-left: 80px;
+	margin-top: 25px;
+	transform: rotate(-20deg);
+}
+
+.poison-eye-right:after {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 15px;
+	background-color: var(--colorBlack1);
+	border-radius: 50px;
+	margin-top: 10px;
+	margin-left: -20px;
+}
+
+.poison-mouth {
+	background-color: var(--colorRed1);
+	position: absolute;
+	width: 25px;
+	height: 7px;
+	margin-top: 70px;
+	border-radius: 0px 0px 25px 25px;
+	border: 2px solid var(--colorBlack1);
+}
+
+.poison-mouth:after {
+	content: "";
+	background-color: var(--colorPink4);
+	position: absolute;
+	width: 10px;
+	height: 3px;
+	border-radius: 20px;
+	margin-top: 4px;
+	margin-left: -5px;
+}
+
+.poison-teeth-left {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent; 
+	border-right: 7px solid transparent; 
+	border-top: 13px solid var(--colorBlack1);
+	margin-left: -2px;
+	z-index: 2;
+}
+
+.poison-teeth-left:after {
+	content: "";
+	position: absolute;
+	margin-left: -3px;
+	margin-top: -13px;
+	border-left: 3px solid transparent; 
+	border-right: 5px solid transparent; 
+	border-top: 10px solid var(--colorWhite);
+}
+
+.poison-teeth-right {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent; 
+	border-right: 7px solid transparent; 
+	border-top: 13px solid var(--colorBlack1);
+	margin-left: 16px;
+	z-index: 2;
+}
+
+.poison-teeth-right:after {
+	content: "";
+	position: absolute;
+	margin-left: -3px;
+	margin-top: -13px;
+	border-left: 3px solid transparent; 
+	border-right: 5px solid transparent; 
+	border-top: 10px solid var(--colorWhite);
+}
+
+.poison-cloud {
+	position: absolute;
+	width: 200px;
+	aspect-ratio: 1;
+	background: 
+	  radial-gradient(farthest-side,var(--colorBlue4) 98%,#0000) 50%/50px 50px,
+	  radial-gradient(farthest-side,var(--colorBlue4) 98%,#0000) 50%/50px 50px,
+	  radial-gradient(farthest-side,var(--colorBlue4) 98%,#0000) 50%/80% 80%,
+	  transparent;
+	background-repeat: no-repeat;
+	animation: poison-cloudAnim 3s infinite alternate;
+	margin-top: -50px;
+	z-index: -20;
+  }
+  @keyframes poison-cloudAnim {
+	0%,
+	30%  {background-position:50%,50%,50%}
+	60%  {background-position:0 0,50%,50%}
+	100% {background-position:50%,100% 100%,50%}
+  }

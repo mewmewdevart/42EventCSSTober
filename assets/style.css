@@ -3,38 +3,38 @@
 
 /* Color: https://lospec.com/palette-list/mulfok32 */
 :root {
-    --colorGreen1: #5ba675;
-    --colorGreen2: #6bc96c;
-    --colorGreen3: #abdd64;
-    --colorYellow1: #fcef8d;
-    --colorOrange1: #ffb879;
-    --colorRed1: #ea6262;
-    --colorRed2: #cc425e;
-    --colorRed3: #a32858;
-    --colorPurple1: #751756;
-    --colorPurple2: #390947;
-    --colorPurple3: #611851;
-    --colorPurple4: #873555;
-    --colorPurple5: #a6555f;
-    --colorPink1: #c97373;
-    --colorPink2: #f2ae99;
-    --colorPink3: #ffc3f2;
-    --colorPink4: #ee8fcb;
-    --colorPink5: #d46eb3;
-    --colorPink6: #873e84;
-    --colorBlack1: #1f102a;
-    --colorPurple6: #4a3052;
-    --colorPurple7: #7b5480;
-    --colorPurple8: #a6859f;
-    --colorGray1: #d9bdc8;
-    --colorWhite: #ffffff;
-    --colorBlue1: #aee2ff;
-    --colorBlue2: #8db7ff;
-    --colorBlue3: #6d80fa;
-    --colorBlue4: #8465ec;
-    --colorBlue5: #834dc4;
-    --colorBlue6: #7d2da0;
-    --colorBlue7: #4e187c;
+	--colorGreen1: #5ba675;
+	--colorGreen2: #6bc96c;
+	--colorGreen3: #abdd64;
+	--colorYellow1: #fcef8d;
+	--colorOrange1: #ffb879;
+	--colorRed1: #ea6262;
+	--colorRed2: #cc425e;
+	--colorRed3: #a32858;
+	--colorPurple1: #751756;
+	--colorPurple2: #390947;
+	--colorPurple3: #611851;
+	--colorPurple4: #873555;
+	--colorPurple5: #a6555f;
+	--colorPink1: #c97373;
+	--colorPink2: #f2ae99;
+	--colorPink3: #ffc3f2;
+	--colorPink4: #ee8fcb;
+	--colorPink5: #d46eb3;
+	--colorPink6: #873e84;
+	--colorBlack1: #1f102a;
+	--colorPurple6: #4a3052;
+	--colorPurple7: #7b5480;
+	--colorPurple8: #a6859f;
+	--colorGray1: #d9bdc8;
+	--colorWhite: #ffffff;
+	--colorBlue1: #aee2ff;
+	--colorBlue2: #8db7ff;
+	--colorBlue3: #6d80fa;
+	--colorBlue4: #8465ec;
+	--colorBlue5: #834dc4;
+	--colorBlue6: #7d2da0;
+	--colorBlue7: #4e187c;
 }
 
 
@@ -112,8 +112,8 @@ p {
 }
 
 .github-corner {
-    color: var(--colorBlack1);
-    fill: var(--colorBlue3);
+	color: var(--colorBlack1);
+	fill: var(--colorBlue3);
 }
 
 /* =================== 01: FRANKENSTEIN ================= */
@@ -1106,3 +1106,194 @@ p {
 	60%  {background-position:0 0,50%,50%}
 	100% {background-position:50%,100% 100%,50%}
   }
+
+  /* =================== 05 :GOLDEN ================= */
+
+.golden-fish {
+	background-color: var(--colorYellow1);
+	width: 125px;
+	height: 125px;
+	border-radius: 100px;
+}
+
+.golden-fish:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorYellow1);
+	width: 100px;
+	height: 25px;
+	border-radius: 10px 0px 0px 50px;
+	margin-left: -50px;
+	transform: rotate(30deg);
+}
+
+.golden-fish-hands {
+	position: absolute;
+	background-color: var(--colorYellow1);
+	width: 25px;
+	height: 50px;
+	border-radius: 100px;
+	margin-left: 40px;
+	margin-top: -25px;
+	transform: rotate(30deg);
+	z-index: -1;
+}
+
+.golden-fish-hands:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorOrange1);
+	width: 25px;
+	height: 50px;
+	border-radius: 100px;
+	margin-left: 20px;
+	margin-top: -35px;
+	transform: rotate(-40deg);
+}
+
+.golden-fish-feets {
+	position: absolute;
+	background-color: var(--colorYellow1);
+	width: 50px;
+	height: 25px;
+	border-radius: 100px;
+	margin-left: -35px;
+	margin-top: -85px;
+	transform: rotate(30deg);
+}
+
+.golden-fish-feets:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorYellow1);
+	width: 50px;
+	height: 25px;
+	border-radius: 100px;
+	margin-top: 20px;
+	margin-left: -15px;
+	transform: rotate(-60deg);
+}
+
+.golden-eye-left {
+	position: absolute;
+	background-color: var(--colorWhite);
+	margin-left: 45px;
+	margin-top: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	z-index: 2;
+}
+
+.golden-eye-left:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorBlack1);
+	margin-top: 10px;
+	width: 20px;
+	height: 20px;
+	border-radius: 100px;
+	z-index: 2;
+}
+
+.golden-eye-right {
+	position: absolute;
+	background-color: var(--colorWhite);
+	margin-left: 85px;
+	margin-top: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	z-index: -2;
+}
+
+.golden-eye-right:before {
+	content: "";
+	position: absolute;
+	background-color: var(--colorBlack1);
+	margin-top: 10px;
+	margin-left: -5px;
+	width: 20px;
+	height: 20px;
+	border-radius: 100px;
+	z-index: -1;
+}
+
+.golden-mouth {
+	position: absolute;
+	background-color: var(--colorBlack1);
+	width: 10px;
+	height: 10px;
+	border-radius: 100px;
+	border: 5px solid var(--colorOrange1);
+	margin-top: -60px;
+	margin-left: 100px;
+}
+
+.golden-details, .golden-details1, .golden-details2 {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 100px;
+	margin-top: -35px;
+	margin-left: 30px;
+	border: 2px solid var(--colorOrange1);
+	z-index: 2;
+}
+.golden-details:after , .golden-details1:after, .golden-details2:after{
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	background-color: var(--colorYellow1);
+	margin-left: -7px;
+	margin-top: -5px;
+}
+
+.golden-details1 {
+	margin-top: -30px;
+	margin-left: 70px;
+}
+
+.golden-details2 {
+	margin-top: -20px;
+	margin-left: 50px;
+}
+
+.golden-bubble {
+	position: absolute;
+	background-color: var(--colorBlue2);
+	width: 15px;
+	height: 15px;
+	border-radius: 100px;
+	margin-left: 150px;
+	margin-top: -100px;
+	box-shadow: 
+		10px -30px 0px 5px var(--colorBlue2);
+	animation: bubbleAnim  2s infinite;
+}
+
+  @keyframes bubbleAnim {
+	0% {
+		background-color: var(--colorBlue3);
+	}
+	50% {
+		background-color: var(--colorBlue2);
+		box-shadow: 
+			10px -30px 0px 5px var(--colorBlue3);
+	}
+	100% {
+		background-color: var(--colorBlue3);
+		box-shadow: 
+			10px -30px 0px 5px var(--colorBlue2);
+	}
+  }
+
+.golden-shadow-fish {
+	position: absolute;
+	background-color: var(--colorBlue3);
+	width: 100px;
+	height: 20px;
+	border-radius: 100px;
+	margin-top: 155px;
+}

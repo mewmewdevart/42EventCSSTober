@@ -1297,3 +1297,145 @@ p {
 	border-radius: 100px;
 	margin-top: 155px;
 }
+
+/* =================== 07 : VIRUS ================= */
+.virus-horse {
+	margin-left: 100px;
+}
+
+.virus-horse-head {
+	background-color: var(--colorPink1);
+	width: 50px;
+	height: 50px;
+	border-radius: 25px 0px 10px 0px;
+}
+
+.virus-eyes {
+	background-color: var(--colorBlack1);
+	position: absolute;
+	width: 5px;
+	height: 10px;
+	border-radius: 100px;
+	margin-left: 30px;
+	margin-top: 23px;
+}
+
+.virus-neck {
+	background-color: var(--colorPink1);
+	width: 35px;
+	height: 35px;
+	border-radius: 0px 0px 25px 0px;
+}
+
+.virus-horse-body {
+	background-color: var(--colorPink1);
+	position: absolute;
+	width: 75px;
+	height: 39px;
+	margin-top: -39px;
+	margin-left: -75px;
+	border-radius: 100px 0px 0px 0px;
+}
+
+.virus-feet {
+	background-color: var(--colorPink1);
+	width: 30px;
+	height: 40px;
+	margin-left: -75px;
+}
+
+.virus-feet:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorPink1);
+	width: 30px;
+	height: 45px;
+	margin-left: 50px;
+	margin-top: -5px;
+}
+
+.virus-feet:before {
+	content: "";
+	position: absolute;
+	background-color: var(--colorPurple7);
+	width: 45px;
+	height: 50px;
+	border-radius: 20px 20px 0px 0px;
+	margin-top: -6px;
+	margin-left: 10px;
+	z-index: 2;
+}
+
+.virus-tail {
+	background-color: var(--colorPink2);
+	position: absolute;
+	width: 50px;
+	height: 35px;
+	border-radius: 100px;
+	margin-left: -90px;
+	margin-top: -70px;
+	z-index: -1;
+}
+
+.virus-tail:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorPink2);
+	position: absolute;
+	width: 50px;
+	height: 35px;
+	border-radius: 100px;
+	margin-left: -45px;
+	margin-top: 11px;
+	transform: rotate(-40deg);
+	z-index: -1;
+	border-radius: 25px 25px 100px 100px;
+}
+
+.virus-tail:before {
+	content: "";
+	position: absolute;
+	background-color: var(--colorPink2);
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border-radius: 100px;
+	margin-left: 45px;
+	margin-top: -70px;
+	z-index: -1;
+	border-radius: 100px 30px 25px 100px;
+}
+
+.virus-skate {
+	position: absolute;
+	background-color: var(--colorPink1);
+	width: 150px;
+	height: 20px;
+	border-radius: 100px;
+	margin-left: -110px;
+	z-index: 3;
+}
+
+.virus-skate:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorPink2);
+	width: 150px;
+	height: 20px;
+	border-radius: 100px;
+	margin-left: -60px;
+}
+
+.virus-skate::before {
+	content: "";
+	position: absolute;
+	background-color: var(--colorPink1);
+	width: 25px;
+	height: 25px;
+	border-radius: 100px;
+	z-index: 4;
+	margin-left: -45px;
+	margin-top: 10px;
+	box-shadow:
+		90px 0px 0px 0px var(--colorPink1);
+}

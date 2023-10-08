@@ -1705,5 +1705,6 @@ p {
 }
 
 .steven-universe {
-	margin-top: 50px;
+	margin-top: 30px;
+	z-index: -1;
 }

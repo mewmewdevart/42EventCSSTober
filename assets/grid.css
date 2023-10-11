@@ -21,3 +21,9 @@
     background-color: var(--colorPurple7);
 }
 
+.grid-item:nth-child(10){
+    background-color: var(--colorPurple7);
+}
+
+
+

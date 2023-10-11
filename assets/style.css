@@ -1812,7 +1812,7 @@ p {
 	border-right: 10px solid transparent;
 	border-left: 10px solid transparent;
 	margin-top: -20px;
-	margin-left: -80px;
+	margin-left: -10px;
   }
 
 .cosmos-crown:after, .cosmos-crown:before {
@@ -1858,4 +1858,29 @@ p {
 	transform: rotate(-20deg);
 	margin-left: -26px;
 	margin-top: 3.5px;
+}
+
+/* =================== 10 - Dreams ================= */
+.dream-clouds {
+	background-color: var(--colorWhite);
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	border-radius: 100px;
+	box-shadow: 
+		-20px 50px 0px -30px var(--colorWhite),
+		-30px 40px 0px -30px var(--colorWhite),
+		-50px 20px 0px -30px var(--colorWhite),
+		-50px -10px 0px -30px var(--colorWhite),
+		-40px -40px 0px -30px var(--colorWhite),
+		-20px -50px 0px -30px var(--colorWhite),
+		0px -60px 0px -30px var(--colorWhite),
+		30px -50px 0px -30px var(--colorWhite),
+		50px -30px 0px -30px var(--colorWhite),
+		60px -10px 0px -30px var(--colorWhite),
+		50px 20px 0px -30px var(--colorWhite),
+		30px 40px 0px -30px var(--colorWhite),
+		10px 50px 0px -30px var(--colorWhite),
+		-50px 100px 0px -35px var(--colorWhite),
+		-100px 50px 0px -25px var(--colorWhite);
 }

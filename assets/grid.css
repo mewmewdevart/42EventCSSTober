@@ -16,3 +16,8 @@
 .grid-item:nth-child(8){
     background-color: var(--colorPurple7);
 }
+
+.grid-item:nth-child(9){
+    background-color: var(--colorPurple7);
+}
+

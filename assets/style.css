@@ -1708,3 +1708,154 @@ p {
 	margin-top: 30px;
 	z-index: -1;
 }
+
+/* =================== 09 : Cosmos ================= */
+.cosmos-pencil {
+	height: 160px; 
+	width: 80px;
+	position: relative;
+	z-index: 5;
+}
+
+.cosmos-pencil:before {
+	content: "";
+	position: absolute;
+	height: 121px;
+	width: 35px;
+	left: -17.5px; 
+	top: -2.5px;
+	background: linear-gradient(
+	  var(--colorGreen3) 90%,
+	  #d2dfe8 0%
+	) no-repeat,
+	linear-gradient(
+	  to right,
+	  #f26c37 33.33%,
+	  #eb852c 32.33%,
+	  #eb852c 66.66%,
+	  #f19f22 66.66%
+	);
+	background-size: 100% 60%, 100% 30%;
+	background-position: 0 0, 0 50%; 
+	border-radius: 5px 5px 0 0;
+  }
+  
+.cosmos-pencil:after {
+	content: "";
+	position: absolute;
+	height: 43.5px;
+	width: 35px; 
+	left: -17.5px;
+	bottom: -1.5px;
+	background: linear-gradient(
+	  #f4c09b 70%,
+	  #0d2436 70%
+	);
+	clip-path: polygon(
+	  0 0,
+	  100% 0,
+	  50% 100%
+	);
+}
+
+.cosmos-eye {
+	background-color: var(--colorWhite);
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 100px;
+	margin-left: -15px;
+	margin-top: 5px;
+}
+
+.cosmos-eye:after {
+	content: "";
+	background-color: var(--colorWhite);
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 100px;
+	margin-left: 10px;
+}
+
+.cosmos-pupil {
+	background-color: var(--colorBlack1);
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	border-radius: 100px;
+	margin-top: 7px;
+	margin-left: 5px;
+	box-shadow: 
+		0.2px 0px 0px 3px var(--colorGreen2);
+}
+
+.cosmos-pupil:after {
+	content: "";
+	background-color: var(--colorBlack1);
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	border-radius: 100px;
+	margin-top: 0px;
+	margin-left: 15px;
+	z-index: 2;
+	box-shadow: 
+		0.2px 0px 0px 3px var(--colorGreen2);
+}
+
+.cosmos-crown {
+	position: absolute;
+	width: 0;
+	height: 0px;
+	border-bottom: 10px solid var(--colorYellow1);
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	margin-top: -20px;
+	margin-left: -80px;
+  }
+
+.cosmos-crown:after, .cosmos-crown:before {
+	position: absolute;
+	content: "";
+	width: 0px;
+  }
+
+.cosmos-crown:before {
+	border-bottom: 10px solid var(--colorYellow1);
+	border-right: 10px solid transparent;
+	left: -10px;
+	top: 0;
+  }
+
+.cosmos-crown:after {
+	border-bottom: 10px solid var(--colorYellow1);
+	border-left: 10px solid transparent;
+	top: 0;
+  }
+
+.cosmos-face {
+	margin-top: 5px;
+	margin-left: -1.5px;
+}
+
+.cosmos-eyebrows {
+	background-color: var(--colorBlack1);
+	position: absolute;
+	width: 14px;
+	height: 5px;
+	transform: rotate(10deg);
+	margin-left: 4px;
+	margin-top: -2px;
+}
+
+.cosmos-eyebrows:after {
+	content: "";
+	background-color: var(--colorBlack1);
+	position: absolute;
+	width: 14px;
+	height: 5px;
+	transform: rotate(-20deg);
+	margin-left: -26px;
+	margin-top: 3.5px;
+}

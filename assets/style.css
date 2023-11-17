@@ -1893,7 +1893,7 @@ p {
 	width: 150px;
 	height: 200px;
 	border-radius: 100px;
-	top: 10px;
+	margin-top: -50px;
 }
 
 .creature:after {

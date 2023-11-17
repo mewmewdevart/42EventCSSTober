@@ -9,7 +9,7 @@
     background-color: var(--colorBlue2);
 }
 
-.grid-item:nth-child(7), .grid-item:nth-child(8), .grid-item:nth-child(9){
+.grid-item:nth-child(7), .grid-item:nth-child(8), .grid-item:nth-child(9), .grid-item:nth-child(12){
     background-color: var(--colorPurple7);
 }
 

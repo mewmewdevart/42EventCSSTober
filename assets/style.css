@@ -35,6 +35,8 @@
 	--colorBlue5: #834dc4;
 	--colorBlue6: #7d2da0;
 	--colorBlue7: #4e187c;
+
+	--colorPurple: #B695DA;
 }
 
 
@@ -1891,7 +1893,7 @@ p {
 	width: 150px;
 	height: 200px;
 	border-radius: 100px;
-	margin-top: -70px;
+	top: 10px;
 }
 
 .creature:after {
@@ -1995,4 +1997,185 @@ p {
 	margin-top: 10px;
 	margin-left: -15px;
 
+}
+
+/* =================== 13 - Amethyst  ================= */
+.amethyst {
+	position: absolute;
+	top: 70px;
+}
+
+.face-amethyst {
+	background-color: var(--colorPurple);
+	width: 120px;
+	height: 113px;
+	border-radius: 50%;
+}
+
+.face-amethyst .eyes {
+	background-color: transparent;
+	right: 30%;
+}
+
+.face-amethyst .eyes-left {
+	position: absolute;
+	background-color: var(--colorWhite);
+	width: 30px;
+	height: 27px;
+	border-radius: 50%;
+	right: 35px;
+}
+
+.face-amethyst .eyes-left:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorBlack1);
+	width: 8px;
+	height: 10px;
+	border-radius: 50%;
+	top: 8px;
+	left: 12px;
+}
+
+.face-amethyst .eyes-right {
+	position: absolute;
+	background-color: var(--colorWhite);
+	width: 30px;
+	height: 27px;
+	border-radius: 50%;
+	left: 40px;
+}
+
+.face-amethyst .eyes-right:after  {
+	content: "";
+	position: absolute;
+	background-color: var(--colorBlack1);
+	width: 8px;
+	height: 10px;
+	border-radius: 50%;
+	top: 8px;
+	left: 12px;
+}
+
+.face-amethyst .nose {
+	position: absolute;
+	background-color: transparent;
+	width: 21px;
+	height: 15px;
+	top: 50px;
+	left: 45px;
+	border-radius: 50%;
+	border: 3px solid var(--colorBlack1);
+}
+
+.face-amethyst .nose:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorPurple);
+	width: 30px;
+	height: 20px;
+	right: -5px;
+	top: 7px;
+}
+
+.face-amethyst .mouth-amethyst {
+	position: absolute;
+	background-color: transparent;
+	top: 70px;
+	left: 40px;
+	width: 30px;
+	height: 25px;
+	border: 3px solid var(--colorBlack1);
+	border-radius: 50%;
+}
+
+.face-amethyst .mouth-amethyst:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorPurple);
+	top: 5px;
+	left: -5px;
+	width: 40px;
+	height: 13px;
+}
+
+.face-amethyst .mouth-amethyst:before {
+	content: "";
+	position: absolute;
+	background-color: var(--colorBlack1);
+	top: 10px;
+	left: 5px;
+	width: 20px;
+	height: 3px;
+	border-radius: 5px;
+	z-index: 1;
+}
+
+.hair-amethyst {
+	position: absolute;
+	width: 175px;
+	height: 125px;
+	border-radius: 50%;
+	background-color: #DACEF4;
+	z-index: -1;
+	top: -30px;
+	left: -30px;
+}
+
+.hair-amethyst:after {
+	content: "";
+	position: absolute;
+	width: 256px;
+	height: 174px;
+	border-radius: 50%;
+	background-color: #DACEF4;
+	z-index: -1;
+	top: 20px;
+	left: -40px;
+}
+
+.details-hair-amethyst {
+	position: absolute;
+	width: 70px;
+	height: 161px;
+	transform: rotate(-20deg);
+	background-color: var(--colorPurple7);
+	z-index: 1;
+	left: 185px;
+	border-radius: 0px 100%;
+}
+
+.details-hair-amethyst2 {
+	position: absolute;
+	width: 70px;
+	height: 161px;
+	transform: rotate(20deg);
+	background-color: var(--colorPurple7);
+	z-index: 1;
+	left: -80px;
+	border-radius: 100% 0px;
+}
+
+.hair-amethyst-front {
+	position: absolute;
+	width: 113.92px;
+	height: 46.085px;
+	background-color: #DACEF4;
+	border-radius: 50%;
+	transform: rotate(45deg);
+	z-index: 3;
+	left: 45px;
+}
+
+.hair-amethyst-front:after {
+	content: "";
+	position: absolute;
+	width: 113.92px;
+	height: 46.085px;
+	background-color: #DACEF4;
+	border-radius: 50%;
+	transform: rotate(70deg);
+	z-index: 3;
+	left: -70px;
+	top: 90px;
 }

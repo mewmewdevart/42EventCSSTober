@@ -1999,6 +1999,303 @@ p {
 
 }
 
+/* =================== 12 - Planet  ================= */
+.stars {
+	position: absolute;
+	display: flex;
+}
+  
+.star {
+	flex: 25%;
+	margin: 5px 0;
+	position: relative;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-right: 15px solid transparent;
+	border-bottom: 10px solid var(--colorWhite);
+	border-left: 15px solid transparent;
+	transform: rotate(35deg);
+  }
+  
+.star:before {
+	border-bottom: 15px solid var(--colorWhite);
+	border-left: 5px solid transparent;
+	border-right: 8px solid transparent;
+	position: absolute;
+	height: 0;
+	width: 0;
+	top: -7.5px;
+	left: -7.5px;
+	display: block;
+	content: '';
+	transform: rotate(-32deg);
+  }
+  
+.star:after {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: -12.5px;
+	width: 0;
+	height: 0;
+	border-right: 15px solid transparent;
+	border-bottom: 10.5px solid var(--colorWhite);
+	border-left: 15px solid transparent; 
+	transform: rotate(-70deg);
+	content: '';
+}
+
+.star:nth-child(1){
+	left: -50px;
+}
+
+.star:nth-child(2){
+	top: 70px;
+	left: -150px;
+}
+
+.star:nth-child(3){
+	top: 90px;
+	left: 175px;
+}
+
+.star:nth-child(4){
+	top: -75px;
+	left: 105px;
+}
+
+.star:nth-child(5){
+	top: -50px;
+	left: 175px;
+}
+
+.cloud-space {
+	position: absolute;
+	background-color: var(--colorWhite);
+	width: 14px;
+	height: 46px;
+	top: -55px;
+	left: 104px;
+	z-index: 2;
+}
+
+.cloud-space:after {
+	content: "";
+	position: absolute;
+	background-color: var(--colorWhite);
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	top: 30px;
+	right: 0px;
+	box-shadow: 
+		15px 0px 0px 5px white,
+		5px 5px 0px 1px white,
+		-25px -5px 0px -5px white,
+		-15px 15px 0px -8px white;
+}
+
+.window-space {
+	position: absolute;
+	width: 13.623px;
+	height: 13.623px;
+	border-radius: 13.623px;
+	background-color: var(--colorRed2);
+	border: 2px solid var(--colorBlack1);
+	top: 2px;
+	left: 2px;
+}
+
+.spaceship {
+	top: -75px;
+	left: 100px;
+	position: absolute;
+	width: 22px;
+	height: 42px;
+	border-radius: 100px 100px 25px 25px;
+	background-color: var(--colorGray1);
+	z-index: 5;
+}
+
+.spaceship:after {
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 15px;
+	border-radius: 50px 0px 0px 20px;
+	background-color: var(--colorRed2);
+	bottom: 5px;
+	left: -12px;
+}
+
+.spaceship:before{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 15px;
+	border-radius: 0px 50px 20px 0px;
+	background-color: var(--colorRed2);
+	bottom: 0;
+	bottom: 5px;
+	right: -12px;
+}
+
+
+.planet-donut {
+	position: absolute;
+}
+
+.donut-circle {
+	position: absolute;
+	width: 46px;
+	height: 46px;
+	background-color: #7B5480;
+	top: 35%;
+	left: 35%;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.donut-circle:after {
+	content: "";
+	position: absolute;
+	width: 57px;
+	height: 47px;
+	background-color: var(--colorPink5);
+	left: -57px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.donut-circle:before {
+	content: "";
+	position: absolute;
+	width: 57px;
+	height: 47px;
+	background-color: var(--colorPink5);
+	left: 47px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.donut-detail {
+	position: absolute;
+	width: 23px;
+	height: 45px;
+	background-color: var(--colorPink5);
+	left: 47px;
+	top: 20px;
+	border-radius: 0px 0px 100px 100px;
+	z-index: 3;
+}
+
+.donut-detail:after {
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 45px;
+	background-color: var(--colorPink2);
+	top: 6px;
+	left: 23px;
+	border-radius:100px;
+	z-index: 3;
+}
+
+.donut-detail2 {
+	position: absolute;
+	width: 23px;
+	height: 45px;
+	background-color: var(--colorPink5);
+	top: 35px;
+	left: 137px;
+	border-radius:100px;
+	z-index: 3;
+}
+
+.donut-prop {
+	position: absolute;
+	width: 5px;
+	height: 13px;
+	left: 60px;
+	transform: rotate(20deg);
+	background-color: #FEF0AE;
+	border-radius: 50px;
+	z-index: 3;
+}
+
+.donut-prop:nth-child(1) {
+	transform: rotate(20deg);
+}
+
+.donut-prop:nth-child(2) {
+	transform: rotate(-20deg);
+	left: 100px;
+}
+
+.donut-prop:nth-child(3) {
+	transform: rotate(-60deg);
+	left: 20px;
+	top: 20px;
+}
+
+.donut-prop:nth-child(4) {
+	transform: rotate(30deg);
+	left: 120px;
+	top: 30px;
+}
+
+.donut-prop:nth-child(5) {
+	transform: rotate(20deg);
+	left: 110px;
+	top: 70px;
+}
+
+.donut-prop:nth-child(6) {
+	transform: rotate(40deg);
+	left: 20px;
+	top: 50px;
+}
+
+.donut-prop:nth-child(7) {
+	transform: rotate(20deg);
+	left: 140px;
+	top: 20px;
+}
+
+
+.donut {
+	position: relative;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	overflow: hidden;
+	top: -25px;
+  }
+  
+.donut::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: var(--colorPink5);
+  }
+  
+.donut::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: var(--colorPink2);
+  }
+  
+
+/* background-color: var(--colorPink2); */
+
 /* =================== 13 - Amethyst  ================= */
 .amethyst {
 	position: absolute;
@@ -2178,4 +2475,157 @@ p {
 	z-index: 3;
 	left: -70px;
 	top: 90px;
+}
+
+/* =================== 14 - Halloween  ================= */
+.halloween {
+	position: absolute;
+}
+
+.pumpkin .light{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-color: var(--colorWhite);
+	left: 20px;
+	top: 15px;
+	z-index: 2px;
+	border-radius: 50px;
+	opacity: 0.5;
+}
+
+.pumpkin .eye-left {
+	position: absolute;
+	background-color: var(--colorRed3);
+	width: 21px;
+	height: 23px;
+	z-index: 2;
+	border-radius: 30px;
+	top: 45px;
+	left: 10px;
+}
+
+.pumpkin .eye-left:after {
+	content: "";
+	position: absolute;
+	background-color: #D25627;
+	width: 30px;
+	height: 7px;
+	z-index: 2;
+	border-radius: 30px;
+	left: -3px;
+	transform: rotate(20deg);
+}
+
+.pumpkin .eye-right {
+	position: absolute;
+	background-color: var(--colorRed3);
+	width: 21px;
+	height: 23px;
+	z-index: 2;
+	border-radius: 30px;
+	top: 45px;
+	right: 10px;
+}
+
+.pumpkin .eye-right:after {
+	content: "";
+	position: absolute;
+	background-color: #D25627;
+	width: 30px;
+	height: 7px;
+	z-index: 2;
+	border-radius: 30px;
+	left: -6px;
+	transform: rotate(-20deg);
+}
+
+.pumpkin .nose {
+	position: absolute;
+	top: 60px;
+	left: 37px;
+	width: 0;
+	height: 0;
+	border-left: 9.5px solid transparent;
+	border-right: 9.5px solid transparent;
+	border-bottom: 17px solid var(--colorRed3);
+	border-radius: 3px;
+}
+
+.pumpkin .pumpkin-mouth {
+	position: absolute;
+	background-color:  var(--colorRed3);
+	width: 49px;
+	height: 35px;
+	border-radius: 15px 15px 100px 100px;
+	top: 85px;
+	left:20px;
+}
+
+.pumpkin .pumpkin-mouth:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 9.5px solid transparent;
+	border-right: 9.5px solid transparent;
+	border-bottom: 17px solid#F29C1F;
+	border-radius: 3px;
+	transform: rotate(180deg);
+	left: 5px;
+	top: -5px;
+}
+
+.pumpkin {
+	width: 94px;
+	height: 146px;
+	background-color: #F29C1F;
+	border-radius: 50px;
+}
+
+.pumpkin:after {
+	content: "";
+	position: absolute;
+	width: 94px;
+	height: 146px;
+	background-color: #E57E25;
+	border-radius: 50px;
+	left: 50px;
+	z-index: -1;
+}
+
+.pumpkin:before {
+	content: "";
+	position: absolute;
+	width: 94px;
+	height: 146px;
+	background-color: #E57E25;
+	border-radius: 50px;
+	right: 50px;
+	z-index: -1;
+}
+
+.cable {
+	position: absolute;
+	width: 27px;
+	height: 33px;
+	background-color: #5ba675;
+	border-radius: 10px;
+	left: 35px;
+	top: -20px;
+	z-index: -1;
+	transform: rotate(20deg);
+}
+
+.cable:after {
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 33px;
+	background-color: #5ba675;
+	border-radius: 10px;
+	left: -3px;
+	top: -15px;
+	z-index: -1;
+	transform: rotate(-20deg);
 }

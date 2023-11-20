@@ -9,10 +9,14 @@
     background-color: var(--colorBlue2);
 }
 
-.grid-item:nth-child(7), .grid-item:nth-child(8), .grid-item:nth-child(9), .grid-item:nth-child(12){
+.grid-item:nth-child(7), .grid-item:nth-child(8), .grid-item:nth-child(9), .grid-item:nth-child(12),  .grid-item:nth-child(13){
     background-color: var(--colorPurple7);
 }
 
 .grid-item:nth-child(10), .grid-item:nth-child(11){
+    background-color: var(--colorPink4);
+}
+
+.grid-item:nth-child(11){
     background-color: var(--colorPink4);
 }
